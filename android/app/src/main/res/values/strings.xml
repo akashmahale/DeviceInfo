@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Device Info</string>
+    <string name="title_activity_main">Device Info</string>
+    <string name="package_name">xyz.androidshibui.deviceInfo</string>
+    <string name="custom_url_scheme">xyz.androidshibui.deviceInfo</string>
+</resources>

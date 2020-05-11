@@ -1,0 +1,9 @@
+{
+  "appId": "xyz.androidshibui.deviceInfo",
+  "appName": "Device Info",
+  "windowsAndroidStudioPath": "J:\\Program Files\\Android\\Android Studio\\bin\\studio64.exe",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}

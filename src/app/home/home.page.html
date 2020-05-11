@@ -1,0 +1,75 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Device
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div>
+    <ion-list-header>
+      <ion-label>Device Info</ion-label>
+    </ion-list-header>
+    <ion-list>
+      <ion-item>
+        <ion-label>Locale</ion-label>{{deviceInfo?.locale}}
+      </ion-item>
+      <ion-item>
+        <ion-label>Model</ion-label>{{deviceInfo?.model}}
+      </ion-item>
+      <ion-item>
+        <ion-label>UUID</ion-label>{{deviceInfo?.uuid}}
+      </ion-item>
+      <ion-item>
+        <ion-label>OS</ion-label>{{deviceInfo?.operatingSystem}} {{deviceInfo?.osVersion}}
+      </ion-item>
+      <ion-item>
+        <ion-label>Manufacturer</ion-label>{{deviceInfo?.manufacturer}}
+      </ion-item>
+    </ion-list>
+    <ion-list-header>
+      <ion-label>Device Info</ion-label>
+    </ion-list-header>
+    <ion-list>
+      <ion-item>
+        <ion-label>Disk Used</ion-label>{{ceil((deviceInfo?.diskTotal - deviceInfo?.diskFree) / 1048576)}} MB
+      </ion-item>
+      <ion-item>
+        <ion-label>Disk Free</ion-label>{{ceil(deviceInfo?.diskFree  / 1048576)}} MB
+      </ion-item>
+    </ion-list>
+    <ion-list-header>
+      <ion-label>Battery</ion-label>
+    </ion-list-header>
+    <ion-list>
+      <ion-item>
+        <ion-label>Battery Level</ion-label>{{deviceInfo?.batteryLevel * 100}}%
+      </ion-item>
+      <ion-item>
+        <ion-label>Charging</ion-label>{{deviceInfo?.isCharging ? 'Yes' : 'No'}}
+      </ion-item>
+    </ion-list>
+
+    <ion-list-header>
+      <ion-label>App</ion-label>
+    </ion-list-header>
+    <ion-list>
+      <ion-item>
+        <ion-label>App Version</ion-label>{{deviceInfo?.appVersion}}
+      </ion-item>
+      <ion-item>
+        <ion-label>App Build</ion-label>{{deviceInfo?.appBuild}}
+      </ion-item>
+    </ion-list>
+  </div>
+
+
+
+</ion-content>
